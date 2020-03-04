@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <link rel="stylesheet" href="../fonts/css/all.css">
+        <style>
+            #header{
+                width:100%;
+                height:40px;
+                border:5px solid darkcyan;
+                background-color: black;
+                color:white;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 2em;
+            }
+            #leftpanel{
+                float:left;
+                border:4px solid darkcyan;
+                width:300px;
+                margin-bottom: 10px;
+                height:480px;
+                margin:10px;
+            }
+            #centerpanel{
+                float:left;
+                border:4px solid darkcyan;
+                width:73%;
+                height:480px;
+                margin-bottom:10px;
+                overflow:scroll;
+                margin:10px;
+            }
+            li{
+                margin-top:40px;
+                border:3px solid black;
+                border-radius: 5px;
+                height:50px;
+                width:200px;
+                background-color:darkcyan;
+                text-align: center;
+                padding:10px;
+                font-size: 1em;
+                color:white;
+            }
+            ul{
+                list-style-type: none;
+            }
+            #section{
+                height:500px;
+                background-color: burlywood;
+
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+            span{
+                margin-left:50px;
+            }
+            #section:target{
+                margin:20px;
+                border:2px solid black;
+                padding:20px;
+                background-color: black;
+                color:white;
+            }
+            
+            
+            #footer{
+                width:100%;
+                height:30px;
+                border:3px solid darkcyan;
+                background-color: black;
+                color:white;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 1em;
+            }
+           
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            Online Shopping
+        </div>
+        <div id="section">
+            
+        
+            <div id="leftpanel">
+                <ul>
+                <li>
+                    <a href="home.html" target="framebody">
+                    <span class="fa fa-home"></span>Home</a>
+                </li>
+                <li>
+                    <a href="Electronics.html" target="framebody">
+                    <span class="fa fa-tv"></span>Electronics</a>
+                </li>
+
+                <li>
+                    <a href="fashion.html" target="framebody">
+                    <span class="fas fa-tshirt"></span>Fashion</a>
+                </li>
+                <li>
+                   <a href="footwear.html" target="framebody"> 
+                    <span class="fas fa-shoe-prints"></span>Footwear</a>
+                </li>
+                </ul>
+
+            </div>
+            <div id="centerpanel">
+                <iframe name="framebody"
+                src="home.html" height="100%"width="100%" ></iframe>
+
+                <iframe src="Electronics.html" name="framebody"height="100%"width="100%" ></iframe>
+                <iframe src="fashion.html" name="framebody"height="100%"width="100%" ></iframe>
+                <iframe src="footwear.html" name="framebody"height="100%"width="100%" ></iframe>
+                 
+
+
+                
+            </div>
+            
+        </div>
+        <div id="footer">
+            <i>&copy;copyright 2020</i>
+        </div>
+    </body>
+</html>
